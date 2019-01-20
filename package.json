@@ -1,19 +1,43 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "eject": "expo eject"
+    "dev": "webpack-dev-server --env.dev",
+    "build": "webpack",
+    "start": "nodemon --ignore dist src/server/server.js"
   },
   "dependencies": {
-    "expo": "^32.0.0",
-    "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-    "googleapis": "^27.0.0"
+    "babel-runtime": "^6.26.0",
+    "compression": "^1.7.3",
+    "nodemon": "^1.18.9",
+    "react": "^16.5.0",
+    "react-dom": "^16.7.0"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.0.0"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^5.12.1",
+    "express": "^4.16.4",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
   },
-  "private": true
+  "private": true,
+  "name": "GoGetter",
+  "description": "<!-- *emphasis* is laid with \\*emphasis\\*.  -->\r Go Getter is an app that will help people develop a routine to help them achieve their fitness goals by designing their exercise schedule and diet plan.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SheekhaJ/GoGetter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SheekhaJ/GoGetter/issues"
+  },
+  "homepage": "https://github.com/SheekhaJ/GoGetter#readme"
 }
